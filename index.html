@@ -44,9 +44,13 @@
                             <a href="./index.html" class="active">Home</a>
                         </li>
                         <li>
-                            <a href="./index.html">Blogs</a>
+                            <a href="#blogs">Blogs</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i></a>
                         </li>
                     </ul>
+                    
                     <form role="search" class="search__form">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -73,7 +77,7 @@
 
 
         <!-- Start Banner -->
-        <div class="banner vh-200">
+        <div class="banner vh-200" id="banner">
             <div class="container py-5">
                 <h1 class="mb-5">Developer</h1>
                 <div class="row gy-5 justify-content-between align-items-center">
@@ -107,7 +111,7 @@
                             <p>I help business grow by crafting amazing web experiences. If you’re looking for a
                                 developer that likes to get stuff done,</p>
                             <code>&lt;/p&gt;</code>
-                            <a href="" class="fs-3 mt-3">Let’s Talk <i class="fa-regular fa-envelope"></i></a>
+                            <a href="#contact" class="fs-3 mt-3">Let’s Talk <i class="fa-regular fa-envelope"></i></a>
 
                         </div>
 
@@ -135,10 +139,10 @@
 
         <main>
 
-            <section class="about__sec py-5" style="background-image: url(/assets/images/about-bg.png);">
+            <section class="about__sec py-5" id="about" style="background-image: url(/assets/images/about-bg.png);">
                 <div class="container">
                     <div class="imgBox mouse__icon mb-5 m-auto">
-                        <a href=""><img src="./assets/images/Scroll.png" alt=""></a>
+                        <a href="#banner"><img src="./assets/images/Scroll.png" alt=""></a>
                     </div>
                     <div class="row align-items-end justify-content-between gy-5">
                         <div class="col-xl-7">
@@ -170,13 +174,13 @@
                 </div>
             </section>
 
-            <section class="skill__sec py-5" style="background-image: url(/assets/images/Skill-bg.png);">
+            <section class="skill__sec py-5" id="skills" style="background-image: url(/assets/images/Skill-bg.png);">
                 <div class="container">
 
                     <code>&lt;/&gt;</code>
 
                     <div class="imgBox mouse__icon mb-5 m-auto">
-                        <a href=""><img src="./assets/images/Scroll.png" alt=""></a>
+                        <a href="#about"><img src="./assets/images/Scroll.png" alt=""></a>
                     </div>
 
                     <div class="d-flex flex-column align-items-center text-center mb-5">
@@ -249,11 +253,11 @@
                 </div>
             </section>
 
-            <section class="skill__sec py-5" style="background-image: url(/assets/images/Works-bg.png);">
+            <section class="skill__sec py-5" id="works" style="background-image: url(/assets/images/Works-bg.png);">
                 <div class="container">
                     <code>&lt;/&gt;</code>
                     <div class="imgBox mouse__icon mb-5 m-auto">
-                        <a href=""><img src="./assets/images/Scroll.png" alt=""></a>
+                        <a href="#skills"><img src="./assets/images/Scroll.png" alt=""></a>
                     </div>
                     <div class="d-flex flex-column align-items-center text-center mb-5">
                         <h2 class="hl-txt mb-3">Works</h2>
@@ -284,10 +288,10 @@
 
             </section>
 
-            <section class="skill__sec py-5">
+            <section class="skill__sec py-5" id="blogs">
                 <div class="container">
                     <div class="imgBox mouse__icon mb-5 m-auto">
-                        <a href=""><img src="./assets/images/Scroll.png" alt=""></a>
+                        <a href="#works"><img src="./assets/images/Scroll.png" alt=""></a>
                     </div>
                     <div class="d-flex flex-column align-items-center text-center mb-5">
                         <h2 class="hl-txt mb-3">Blogs</h2>
@@ -324,10 +328,10 @@
 
             </section>
 
-            <section class="contact__sec skill__sec py-5" style="background-color: #1A1E23;">
+            <section class="contact__sec skill__sec py-5" id="contact" style="background-color: #1A1E23;">
                 <div class="container">
                     <div class="imgBox mouse__icon mb-5 m-auto">
-                        <a href=""><img src="./assets/images/Scroll.png" alt=""></a>
+                        <a href="#blogs"><img src="./assets/images/Scroll.png" alt=""></a>
                     </div>
                     <div class="d-flex flex-column align-items-center text-center mb-5">
                         <h2 class="hl-txt mb-3">Contact</h2>
@@ -340,15 +344,15 @@
                         <!-- <div class="row py-5"> -->
                             <div class="col-5">
                                 <label for="">Your name <sup>*</sup></label>
-                                <input type="text" name="name" id="" placeholder="Enter your name">
+                                <input  type="text" name="name" id="" placeholder="Enter your name">
                             </div>
                             <div class="col-5">
                                 <label for="">Your email <sup>*</sup></label>
-                                <input type="email" name="email" id="" placeholder="Enter your email">
+                                <input  type="email" name="email" id="" placeholder="Enter your email">
                             </div>
                             <div class="col-12">
                                 <label for="">Your message <sup>*</sup></label>
-                                <input type="text" name="message" id="" placeholder="Enter your needs">
+                                <input  type="text" name="message" id="" placeholder="Enter your needs">
                             </div>
                             <div class="blog__buttons">
                                 <button type="submit" class="btn__1">Send Message<i class="fa-regular fa-paper-plane ps-2"></i></button>
@@ -367,14 +371,14 @@
         <footer id="footer" class="py-3" style="background-color: #1A1E23;">
             <div class="container">
                     <ul class="footer__content justify-content-center justify-content-xl-between">
-                        <li class="copyright">© 2023 SinanTokmak. All rights reserved.</li>
-                        <li>
+                        <li class="copyright order-3 order-lg-1">© 2023 SinanTokmak. All rights reserved.</li>
+                        <li class="order-3 order-lg-2">
                             <ul>
                                 <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Terms & Conditions</a></li>
                             </ul>
                         </li>
-                        <li>
+                        <li class="order-1 order-lg-3">
                             <ul class="social__links">
                                 <li>
                                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -388,26 +392,26 @@
         
                             </ul>
                         </li>
-                        <li class="coder">Developed by <a href="#">M.Hussnain</a></li>
+                        <li class="coder order-4">Developed by <a href="#">M.Hussnain</a></li>
                     </ul>
             </div>
 
         </footer>
         <!-- <div class="navigation__bar"> -->
         <ul class="navigation__bar">
-            <li><a href=""><img src="./assets/images/icon-grid1.svg" alt="" class="img-fluid"></a></li>
-            <li><a href=""><i class="fa-regular fa-user"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-code"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-tv"></i></a></li>
-            <li><a href=""><i class="fa-regular fa-pen-to-square"></i></a></li>
-            <li><a href=""><i class="fa-regular fa-envelope"></i></a></li>
+            <li><a href="./index.html"><img src="./assets/images/icon-grid1.svg" alt="" class="img-fluid"></a></li>
+            <li><a href="#about"><i class="fa-regular fa-user"></i></a></li>
+            <li><a href="#skills"><i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#works"><i class="fa-solid fa-tv"></i></a></li>
+            <li><a href="#blogs"><i class="fa-regular fa-pen-to-square"></i></a></li>
+            <li><a href="#contact"><i class="fa-regular fa-envelope"></i></a></li>
 
         </ul>
         <!-- </div> -->
         <div class="search__Box p-3 rounded-3" id="searchContainer">
-            <form class="d-flex news_letter_form" role="search">
+            <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn__1" type="submit">Search</button>
             </form>
         </div>
         <div class="overlay" id="overlay"></div>

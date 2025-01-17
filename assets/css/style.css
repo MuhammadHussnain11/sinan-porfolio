@@ -645,6 +645,10 @@ form.row .col-12{
   visibility: visible;
   transform: translateX(-30%);
 }
+.search__Box .btn__1 {
+  padding: 12px 20px;
+  font-size: 1rem;
+}
 #overlay {
   display: none; /* Hidden by default */
   position: fixed;
@@ -654,11 +658,15 @@ form.row .col-12{
   height: 100%;
   background: transparent;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
 }
 #overlay.show{
   display: block;
 }
+#searchIcon{
+  display: none;
+}
+
 
 @media (min-width: 1400px) {
   .container,
@@ -680,12 +688,11 @@ form.row .col-12{
     font-size: 1.5rem;
     font-weight: 400;
   }
-  .search__form input {
+  .search__form {
     display: none;
   }
-  .search__form i {
-    position: relative;
-    color: var(--primary-color);
+  #searchIcon{
+    display: block;
   }
   .navigation__bar {
     display: none;
