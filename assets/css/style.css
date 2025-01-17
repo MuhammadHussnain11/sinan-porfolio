@@ -483,10 +483,12 @@ button:active {
 
 .blog__conatiner {
   border-bottom: 1px solid var(--primary-color);
-  border-top: 1px solid var(--primary-color);
   max-width: 1052px;
   width: 96%;
   margin: auto;
+}
+#blogs .container .blog__conatiner{ 
+  border-top: 1px solid var(--primary-color);
 }
 .blog__conatiner .imgBox {
   max-width: 240px;
