@@ -582,8 +582,7 @@ form ::-webkit-input-placeholder{
 form.row{
   max-width: 700px;
 }
-form.row .col-5,
-form.row .col-12{
+form.row .form__inputs{
   display: flex;
   flex-direction: column;
 }
@@ -633,7 +632,7 @@ form.row .col-12{
   top: 10%;
   left: 50%;
   transform: translateX(-40%);
-  width: 400px;
+  width: 350px;
   background: rgba(0, 0, 0, 0.2); /* Slightly transparent */
   backdrop-filter: blur(10px); /* Blur effect */
   border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Frosted glass border */
@@ -646,7 +645,7 @@ form.row .col-12{
   transform: translateX(-30%);
 }
 .search__Box .btn__1 {
-  padding: 12px 20px;
+  padding: 5px 16px;
   font-size: 1rem;
 }
 #overlay {
