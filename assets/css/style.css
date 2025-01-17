@@ -480,17 +480,16 @@ button:active {
 .slider__work .next__arrow {
   right: -25px;
 }
-
-.blog__conatiner {
+.blog__container>li:first-child{
+  border-top: 1px solid var(--primary-color);
+}
+.blog__content {
   border-bottom: 1px solid var(--primary-color);
   max-width: 1052px;
   width: 96%;
   margin: auto;
 }
-#blogs .container:first-child>.blog__conatiner{ 
-  border-top: 1px solid var(--primary-color);
-}
-.blog__conatiner .imgBox {
+.blog__content .imgBox {
   max-width: 240px;
   margin: auto;
 }
@@ -512,7 +511,8 @@ button:active {
   padding-bottom: 3px;
   border-bottom: 1px solid var(--primary-color);
 }
-.blog__details ul {
+.blog__details ul,
+.single__blog__detail ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -521,12 +521,22 @@ button:active {
   font-family: var(--sec-font);
   font-weight: 300;
 }
-.blog__details > ul > li:first-child {
+
+.blog__type {
+  font-size: 14px;
+  font-family: var(--sec-font);
+  font-weight: 300;
   padding: 4px 8px;
   background-color: #43454d;
   border-radius: 16px;
 }
-.blog__details ul li span {
+.single__blog__type{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.blog__details ul li span,
+.single__blog__detail li span{
   font-weight: 500;
   margin-right: 8px;
 }
@@ -537,6 +547,15 @@ button:active {
   flex-wrap: wrap;
   gap: 32px;
 }
+.single__blog__detail{
+  border-top: 1px solid #43454D;
+  border-bottom: 1px solid #43454D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
 .btn__1,
 .btn__2 {
   padding: 16px 32px;
@@ -613,7 +632,8 @@ form.row .form__inputs{
   color: var(--high-light-txt);
   text-decoration: underline;
 }
-.footer__content .social__links a{
+.footer__content .social__links a,
+.share__btn{
   background-color: #98FAEC;
   width: 32px;
   height: 32px;
@@ -622,7 +642,8 @@ form.row .form__inputs{
   text-align: center;
   line-height: 32px;
 }
-.footer__content .social__links a i{
+.footer__content .social__links a i,
+.share__btn i{
   color: #1a1e23;
 }
 .search__Box {
@@ -666,6 +687,22 @@ form.row .form__inputs{
 }
 #searchIcon{
   display: none;
+}
+.single__blog{
+  max-width: 720px;
+  margin: auto;
+}
+.single__blog h3{
+  color: var(--high-light-txt);
+}
+.single__blog h4{
+  color: var(--high-light-txt);
+  font-family: var(--sec-font);
+  font-weight: 300;
+}
+.single__blog p{
+  font-family: var(--sec-font);
+  font-weight: 300;
 }
 
 
