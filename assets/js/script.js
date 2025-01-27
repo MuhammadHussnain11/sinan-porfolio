@@ -13,3 +13,4 @@ overlay.addEventListener('click', () => {
   searchContainer.classList.remove('show');
   overlay.classList.remove('show');
 });
+
